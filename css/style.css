@@ -1,0 +1,441 @@
+/* Глобальная стилизация */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #494848;
+    line-height: 26px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #494848;
+    display: inline-block;
+}
+input, textarea {
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+address {
+    font-style: normal;
+}
+
+/* Основные блоки */
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+.row {
+    display: flex;
+}
+.col {
+    width: 50%;
+}
+.btn {
+    border: 2px solid #ff2d2d;
+    border-radius: 5px;
+    padding: 13px 58px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.dividing-line__red {
+    max-width: 130px;
+    height: 2px;
+    background-color: #ff2d2d;
+    padding: 0;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Стилизация header (самый вверхний блок) */
+header {
+    padding-top: 30px;
+    background-color: #f6f2f2;
+}
+header nav {
+    background-color: #313030;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+header a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e0e0e0;
+    padding: 45px 25px 35px;
+}
+header a:hover,
+header .active a {
+    background-color: #ff3f40;
+    transition: .3s;
+}
+
+/* Стилизация about (второй блок) */
+.about {
+    padding: 110px 0;
+    background-color: #f6f2f2;
+}
+.about .row {
+    column-gap: 110px;
+    align-items: center;
+}
+.about .about__title {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 70px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+    color: black;
+}
+.about .about__description {
+    max-width: 515px;
+    margin-bottom: 60px;
+}
+.about .about__btn {
+    background-color: #ff2d2d;
+    color: white;
+}
+.about .about__btn:hover {
+    background-color: transparent;
+    color: #ff2d2d;
+    transition: 0.3s;
+}
+.about .about__video-wrapper iframe {
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 55px -20px #000000;
+}
+
+/* Стилизация provide (третий блок) */
+/* provide */
+.provide {
+    padding: 110px 0;
+    background-color: white;
+}
+/* provide__info */
+.provide .provide__info .provide__title {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 55px;
+    margin-bottom: 50px;
+    color: #333333;
+}
+.provide .provide__info .provide__description {
+    max-width: 530px;
+    margin-bottom: 60px;
+}
+.provide .provide__info .provide__btn{
+    color: #ff2d2d;
+}
+.provide .provide__info .provide__btn:hover {
+    background-color: #ff2d2d;
+    color: white;
+    transition: 0.3s;
+}
+/* provide__represent */
+.provide .provide__represent {
+    display: flex;
+    flex-wrap: wrap;
+}
+.provide .provide__represent .provide__item {
+    margin-bottom: 30px;
+    align-items: center;
+}
+.provide .provide__represent .provide__img {
+    margin-bottom: 30px;
+}
+.provide .provide__represent .provide__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #4c4c4c;
+}
+.provide .provide__represent .provide__description {
+    max-width: 290px;
+}
+
+/* Стилизация линий */
+.dividing-line {
+    max-width: 1280px;
+    padding: 0 15px;
+    height: 2px;
+    background-color: #ececec;
+}
+
+/* Стилизация Product (четвёртый блок) */
+.product{
+    padding: 110px 0;
+    background-color: white;
+    text-align: center;
+}
+/* product__info */
+.product .product__info {
+    margin: 0 auto 90px;
+}
+.product .product__info .product__title {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #333333;
+}
+.product .product__info .product__description {
+    max-width: 515px;
+    margin: 0 auto 30px;
+}
+.product .product__info .dividing-line__red {
+    margin: 0 auto;
+}
+/* product__represent */
+/* product__represent > nav */
+.product .product__represent nav {
+    margin-bottom: 70px;
+}
+.product .product__represent nav ul {
+    justify-content: center;
+    display: flex;
+}
+.product .product__represent nav li {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0 30px;
+}
+.product .product__represent nav .active a,
+.product .product__represent nav a:hover {
+    color: #ff2d2d;
+    transition: 0.3s;
+}
+/* product__represent > item */
+.product .product__represent .product__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product .product__represent .product__item-wrapper .item {
+    width: 297px; height: 289px;
+    background-color: #f5f0dd;
+}
+
+/* Стилизация team (пятый блок) */
+.team {
+    padding-bottom: 110px;
+}
+.team .team__title {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 45px;
+}
+.team .team__block {
+    margin-left: 15px;
+}
+.team .team__description {
+    max-width: 450px;
+    margin-bottom: 35px;
+}
+.team .dividing-line__red {
+    margin: 0 0 70px;
+}
+.team .team__represent {
+    display: flex;
+}
+.team .team__represent .team__item-block {
+    width: 320px; height: 460px;
+    background-color: #f5f0dd;
+    margin-right: 75px;
+}
+.team .team__wrapper-block .team__title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.team .team__wrapper-block .team__description {
+    max-width: 630px;
+    margin-bottom: 45px;
+}
+.team .team__wrapper-block nav {
+    margin-bottom: 70px;
+}
+.team .team__wrapper-block nav ul {
+    display: flex;
+}
+.team .team__wrapper-block nav ul li {
+    margin-right: 35px;
+}
+.team .team__wrapper-block nav ul li a {
+    font-style: italic;
+    font-size: 18px;
+}
+.team .team__wrapper-block .team__item-wrapper {
+    display: flex;
+    column-gap: 20px;
+}
+.team .team__wrapper-block .team__item {
+    width: 197px; height: 195px;
+    background-color: #f5f0dd;
+    position: relative;
+}
+.team .team__wrapper-block .team__item p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #7a786e;
+    border-top: #f5f0dd solid 164px;
+    color: white;
+    padding-bottom: 5px;
+    opacity: 0;
+}
+.team .team__wrapper-block .team__item .active,
+.team .team__wrapper-block .team__item p:hover {
+    transition: 0.3s;
+    opacity: 100%;
+}
+
+/* Стилизация design (шестой блок) */
+.design {
+    background-color: #f5f0dd;
+    padding: 140px 0;
+    text-align: center;
+
+}
+.design .design__title {
+    color: #fdfcf8;
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+.design .design__description {
+    color: #fdfcf8;
+    margin-bottom: 60px;
+}
+.design .design__wrapper-block input {
+    background-color: white;
+    padding: 27px 35px;
+    width: 520px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 12px;
+}
+.design .design__wrapper-block .design__btn {
+    background-color: #ff2d2d;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 27px 60px;
+    border-radius: 5px;
+}
+
+/* Стилизация get (седьмой блок) */
+.get {
+    margin: 110px 0;
+}
+.get .get__title {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+.get .get__description {
+    max-width: 725px;
+    margin-bottom: 60px;
+}
+.get .dividing-line__red {
+    margin-bottom: 75px;
+}
+.get .get__wrapper {
+    position: relative;
+}
+.get .get__wrapper-block form {
+    width: 730px;
+    float: left;
+}
+.get .get__wrapper-block .get__form-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.get .get__wrapper-block textarea::placeholder,
+.get .get__wrapper-block input::placeholder{
+    color: #444444;
+}
+.get .get__wrapper-block .get__form{
+    background-color: #e5e5e5;
+    padding: 21px 55px;
+    width: 338px;
+    margin-bottom: 45px;
+    font-size: 18px;
+}
+.get .get__wrapper-block .get__form-name{
+    margin-right: 54px;
+}
+.get .get__wrapper-block textarea {
+    height: 250px;
+    width: 100%;
+    background-color: #e5e5e5;
+    padding: 21px 55px;
+    margin-bottom: 45px;
+}
+.get .get__wrapper-block .get__form-submit{
+    background-color: #ff3b3b;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 23px 0;
+    width: 100%;
+}
+.get .get__contact-block a{
+    color: #d5d5d5;
+}
+.get .get__contact-block {
+    background-color: #2d2d2d;
+    color: #d5d5d5;
+    position: absolute;
+    width: 57%;
+    margin-left: 840px;
+    padding: 145px 0 0 80px;
+    height: 487px;
+}
+.get .get__contact-block .get__title {
+    font-size: 18px;
+    margin: 0 0 45px 0;
+}
+.get .get__contact-block .get__contact-email,
+.get .get__contact-block address{
+    margin-bottom: 15px;
+}
+
+/* Стилизация footer (последний блок) */
+footer {
+    height: 110px;
+    background-color: #313030;
+    color: #b8b8b8;
+}
+footer .container {
+    display: flex;
+    padding-top: 45px;
+    column-gap: 55%;
+}
+footer p {
+    width: 400px;
+}
+footer ul {
+    column-gap: 10px;
+    display: flex;
+}
