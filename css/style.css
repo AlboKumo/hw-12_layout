@@ -5,7 +5,7 @@ body {
     color: #494848;
     line-height: 26px;
 }
-ul {
+ul{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -44,17 +44,13 @@ address {
     font-weight: bold;
     font-size: 18px;
     text-transform: capitalize;
+    cursor: pointer;
 }
 .dividing-line__red {
     max-width: 130px;
     height: 2px;
     background-color: #ff2d2d;
     padding: 0;
-}
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
 }
 
 /* Стилизация header (самый вверхний блок) */
@@ -340,6 +336,7 @@ header .active a {
     font-size: 18px;
     padding: 27px 60px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Стилизация get (седьмой блок) */
@@ -361,10 +358,10 @@ header .active a {
 }
 .get .get__wrapper {
     position: relative;
+    display: flex;
 }
 .get .get__wrapper-block form {
     width: 730px;
-    float: left;
 }
 .get .get__wrapper-block .get__form-wrapper{
     display: flex;
@@ -399,6 +396,7 @@ header .active a {
     font-size: 18px;
     padding: 23px 0;
     width: 100%;
+    cursor: pointer;
 }
 .get .get__contact-block a{
     color: #d5d5d5;
@@ -407,10 +405,11 @@ header .active a {
     background-color: #2d2d2d;
     color: #d5d5d5;
     position: absolute;
-    width: 57%;
-    margin-left: 840px;
-    padding: 145px 0 0 80px;
+    width: 575px;
+    right: -25%;
+    padding: 145px 150px 0 80px;
     height: 487px;
+    bottom: 0%;
 }
 .get .get__contact-block .get__title {
     font-size: 18px;
