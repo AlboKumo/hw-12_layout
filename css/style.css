@@ -202,13 +202,13 @@ header .active a {
 .product .product__represent nav ul {
     justify-content: center;
     display: flex;
+    gap: 60px
 }
 .product .product__represent nav li {
     text-align: center;
     font-weight: bold;
     font-size: 22px;
     text-transform: uppercase;
-    margin: 0 30px;
 }
 .product .product__represent nav .active a,
 .product .product__represent nav a:hover {
@@ -268,9 +268,7 @@ header .active a {
 }
 .team .team__wrapper-block nav ul {
     display: flex;
-}
-.team .team__wrapper-block nav ul li {
-    margin-right: 35px;
+    gap: 35px;
 }
 .team .team__wrapper-block nav ul li a {
     font-style: italic;
@@ -328,6 +326,9 @@ header .active a {
     border: none;
     margin-right: 12px;
 }
+.design .design__wrapper-block form {
+   display: inline-block;
+}
 .design .design__wrapper-block .design__btn {
     background-color: #ff2d2d;
     color: white;
@@ -337,11 +338,18 @@ header .active a {
     padding: 27px 60px;
     border-radius: 5px;
     cursor: pointer;
+    border: solid #ff2d2d 2px;
+}
+.design .design__wrapper-block .design__btn:hover{
+    transition: .3s;
+    color: #ff2d2d;
+    background-color: white;
 }
 
 /* Стилизация get (седьмой блок) */
 .get {
     margin: 110px 0;
+    overflow: hidden;
 }
 .get .get__title {
     font-size: 42px;
@@ -358,6 +366,9 @@ header .active a {
 }
 .get .get__wrapper {
     position: relative;
+    display: flex;
+}
+.get .get__wrapper-block {
     display: flex;
 }
 .get .get__wrapper-block form {
@@ -381,6 +392,9 @@ header .active a {
 .get .get__wrapper-block .get__form-name{
     margin-right: 54px;
 }
+#get__full-label-size{
+    width: 100%;
+}
 .get .get__wrapper-block textarea {
     height: 250px;
     width: 100%;
@@ -397,6 +411,13 @@ header .active a {
     padding: 23px 0;
     width: 100%;
     cursor: pointer;
+    border: 2px solid #ff2d2d;
+    border-radius: 8px;
+}
+.get .get__wrapper-block .get__form-submit:hover {
+    transition: .3s;
+    color: #ff3b3b;
+    background-color: white;
 }
 .get .get__contact-block a{
     color: #d5d5d5;
@@ -404,12 +425,20 @@ header .active a {
 .get .get__contact-block {
     background-color: #2d2d2d;
     color: #d5d5d5;
+    width: 430px;
+    padding: 145px 0 0 80px;
+    position: relative;
+    margin-left: 105px;
+}
+.get .get__contact-block:after {
     position: absolute;
-    width: 575px;
-    right: -25%;
-    padding: 145px 150px 0 80px;
-    height: 487px;
-    bottom: 0%;
+    content: '';
+    width: 100%;
+    left: 100%;
+    height: 100%;
+    top: 0;
+    display: block;
+    background-color: #2d2d2d;
 }
 .get .get__contact-block .get__title {
     font-size: 18px;

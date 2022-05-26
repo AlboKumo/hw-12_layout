@@ -237,7 +237,9 @@
             <p class="design__description">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
 
             <div class="design__wrapper-block">
-                <input placeholder="Email Address..." type="email">
+                <form>
+                    <label><input placeholder="Email Address..." type="email"></label>
+                </form>
                 <a class="design__btn" href="#">subscribe</a>
             </div>
         </div>
@@ -258,12 +260,12 @@
                 <div class="get__wrapper-block">
                     <form>
                         <div class="get__form-wrapper">
-                            <input class="get__form get__form-name" placeholder="Name">
+                            <label><input class="get__form get__form-name" placeholder="Name"></label>
 
-                            <input class="get__form get__form-email" type="email" placeholder="Your Mail">
+                            <label><input class="get__form get__form-email" type="email" placeholder="Your Mail"></label>
 
 
-                        <textarea placeholder="Type your message"></textarea>
+                        <label id="get__full-label-size"><textarea placeholder="Type your message"></textarea></label>
 
                         <input class="get__form-submit" type="submit" value="Send message">
                         </div>
